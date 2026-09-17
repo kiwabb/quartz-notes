@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Java 与工程笔记
+  pageTitle: 江遥 · 技术笔记
   pageTitleSuffix: " · 江遥"
   enableSPA: true
   enablePopovers: true
@@ -15,30 +15,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Noto Serif SC
+      header: Noto Sans SC
       body: Noto Sans SC
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#f6f7f2"
-        lightgray: "#e2e7df"
-        gray: "#99a59c"
-        darkgray: "#36443f"
-        dark: "#10201b"
-        secondary: "#006d5b"
-        tertiary: "#b3672d"
-        highlight: rgba(0, 109, 91, 0.12)
-        textHighlight: "#f2c87966"
+        light: "#fffdfa"
+        lightgray: "#ebe7e0"
+        gray: "#8a8f98"
+        darkgray: "#4b5563"
+        dark: "#19202a"
+        secondary: "#b44335"
+        tertiary: "#236b5d"
+        highlight: rgba(180, 67, 53, 0.11)
+        textHighlight: "#f4d98d88"
       darkMode:
-        light: "#101815"
-        lightgray: "#26322e"
-        gray: "#64736d"
-        darkgray: "#c6d1cc"
-        dark: "#edf4f0"
-        secondary: "#62c7af"
-        tertiary: "#e1a26d"
-        highlight: rgba(98, 199, 175, 0.14)
-        textHighlight: "#b9863c66"
+        light: "#151719"
+        lightgray: "#2d3034"
+        gray: "#7e858f"
+        darkgray: "#c9cdd3"
+        dark: "#f4f1eb"
+        secondary: "#ef8b78"
+        tertiary: "#70b7a6"
+        highlight: rgba(239, 139, 120, 0.13)
+        textHighlight: "#ad874c66"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -110,7 +110,7 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
   - source: "@quartz-themes/core"
-    enabled: true
+    enabled: false
     options:
       theme: default
       mode: both
