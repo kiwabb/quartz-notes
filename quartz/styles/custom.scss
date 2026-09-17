@@ -121,6 +121,19 @@ body {
   height: calc(100vh - 4.25rem);
 }
 
+// Quartz reserves its own 6rem top offset for the default layout. The fixed
+// site navigation already provides that separation, so inner pages only need
+// one compact spacing step below it.
+@media all and (min-width: 801px) {
+  body:not([data-slug="index"]) .page > #quartz-body .sidebar {
+    padding-top: 2rem;
+  }
+
+  body:not([data-slug="index"]) .page > #quartz-body .page-header {
+    margin-top: 2rem;
+  }
+}
+
 .center > article {
   border-top: 1px solid var(--site-line);
   padding-top: clamp(1.5rem, 3vw, 2.5rem);
