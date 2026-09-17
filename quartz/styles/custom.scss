@@ -1,3 +1,45 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+body {
+  background-image:
+    radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--secondary) 9%, transparent), transparent 28rem),
+    radial-gradient(circle at 88% 18%, color-mix(in srgb, var(--tertiary) 8%, transparent), transparent 30rem);
+  background-attachment: fixed;
+}
+
+.page > #quartz-body {
+  backdrop-filter: saturate(112%);
+}
+
+.center > article {
+  border: 1px solid color-mix(in srgb, var(--lightgray) 72%, transparent);
+  border-radius: 1.5rem;
+  background: color-mix(in srgb, var(--light) 90%, transparent);
+  box-shadow: 0 1.5rem 4rem color-mix(in srgb, var(--dark) 7%, transparent);
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+article h1 {
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+article h2 {
+  margin-top: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+article a {
+  text-underline-offset: 0.2em;
+}
+
+code {
+  border-radius: 0.35rem;
+}
+
+@media all and ($mobile) {
+  .center > article {
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+}

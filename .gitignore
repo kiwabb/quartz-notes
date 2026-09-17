@@ -6,6 +6,8 @@ prof
 tsconfig.tsbuildinfo
 .obsidian
 .quartz-cache
+.playwright-cli
+output
 private/
 .replit
 replit.nix
